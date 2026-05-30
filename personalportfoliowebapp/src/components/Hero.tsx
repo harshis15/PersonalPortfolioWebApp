@@ -15,6 +15,7 @@ const Hero = () => {
   const { hero, brand } = portfolioData
   const [index, setIndex] = useState(0)
   const canvasRef = useRef<HTMLCanvasElement | null>(null)
+  const resumeUrl = new URL('../assets/Harshitha Srikanth Resume.pdf', import.meta.url).href
 
   const role = useMemo(() => hero.roleTicker[index], [hero.roleTicker, index])
 
@@ -142,7 +143,7 @@ const Hero = () => {
               {hero.ctaPrimary.label}
             </GlowButton>
             <a
-              href={hero.ctaSecondary.href}
+              href={resumeUrl}
               className="inline-flex items-center rounded-full border border-teal px-5 py-2.5 text-sm font-semibold text-teal transition hover:bg-teal/10"
               download
             >
