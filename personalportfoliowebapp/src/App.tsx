@@ -1,5 +1,5 @@
 import { Suspense, lazy, useEffect, useMemo, useState } from 'react'
-import { motion, useSpring } from 'framer-motion'
+import { motion, useSpring, useTransform } from 'framer-motion'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Footer from './components/Footer'
@@ -20,6 +20,10 @@ function App() {
   const scrollProgress = useScrollProgress()
   const smoothProgress = useSpring(scrollProgress, { stiffness: 130, damping: 26 })
   const { x, y, isDesktop } = useCursorGlow()
+  const cursorGlowX = useTransform(x, (value) => value - 150)
+  const cursorGlowY = useTransform(y, (value) => value - 150)
+  const cursorDotX = useTransform(x, (value) => value - 5)
+  const cursorDotY = useTransform(y, (value) => value - 5)
 
   const sectionIds = useMemo(
     () => ['hero', ...portfolioData.navLinks.map((link) => link.id), 'education'],
@@ -61,11 +65,11 @@ function App() {
         <>
           <motion.div
             className="pointer-events-none fixed z-[60] hidden h-[300px] w-[300px] rounded-full bg-[radial-gradient(circle,rgba(113,54,0,0.26)_0%,rgba(113,54,0,0.08)_42%,transparent_72%)] md:block"
-            style={{ x: x - 150, y: y - 150 }}
+            style={{ x: cursorGlowX, y: cursorGlowY }}
           />
           <motion.div
             className="pointer-events-none fixed z-[70] hidden h-2.5 w-2.5 rounded-full border border-[#FDFBD4]/75 bg-[#C05800] shadow-[0_0_12px_rgba(192,88,0,0.65)] md:block"
-            style={{ x: x - 5, y: y - 5 }}
+            style={{ x: cursorDotX, y: cursorDotY }}
           />
         </>
       )}
