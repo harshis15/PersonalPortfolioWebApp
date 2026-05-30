@@ -1,6 +1,5 @@
 import { AnimatePresence, motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
-import GlowButton from './ui/GlowButton'
 import type { NavItem } from '../data/portfolioData'
 
 type NavbarProps = {
@@ -75,13 +74,6 @@ const Navbar = ({ activeSection, navLinks }: NavbarProps) => {
                 </button>
               )
             })}
-            <GlowButton
-              type="button"
-              onClick={() => scrollToSection('contact')}
-              className="px-4 py-1.5 text-xs"
-            >
-              Hire Me
-            </GlowButton>
           </div>
         </motion.nav>
 
