@@ -23,19 +23,19 @@ const About = () => {
 
       <div className="grid gap-4 lg:grid-cols-3">
         <BentoCard className="lg:col-span-2">
-          <h3 className="font-display text-3xl text-white">Who I am</h3>
-          <p className="mt-4 text-base leading-relaxed text-slate-200/90">{about.statement}</p>
+          <h3 className="font-display text-3xl text-teal">Who I am</h3>
+          <p className="mt-4 text-base leading-relaxed text-teal/85">{about.statement}</p>
         </BentoCard>
 
         <BentoCard>
           <p className="text-3xl">📍</p>
-          <p className="mt-3 font-display text-2xl text-white">Dubai, UAE</p>
+          <p className="mt-3 font-display text-2xl text-teal">Dubai, UAE</p>
           <p className="mt-1 text-sm text-muted">Based in</p>
         </BentoCard>
 
         <BentoCard>
           <p className="font-display text-3xl text-mint">MSc</p>
-          <p className="mt-2 text-sm text-slate-200">Data Science - Heriot-Watt</p>
+          <p className="mt-2 text-sm text-teal/85">Data Science - Heriot-Watt</p>
           <span className="mt-3 inline-flex rounded-full border border-mint/40 px-3 py-1 text-xs text-mint">On track for Distinction</span>
         </BentoCard>
 
@@ -46,13 +46,13 @@ const About = () => {
 
         <BentoCard>
           <p className="font-display text-3xl text-mint">2×</p>
-          <p className="mt-2 text-sm text-slate-200">Hackathon Winner</p>
+          <p className="mt-2 text-sm text-teal/85">Hackathon Winner</p>
           <p className="text-xs text-muted">AGENTVERSE 2025</p>
         </BentoCard>
 
         <BentoCard className="lg:col-span-2">
           <p className="text-sm uppercase tracking-[0.2em] text-muted">Languages</p>
-          <p className="mt-3 font-display text-2xl text-slate-200">English · Hindi · Kannada</p>
+          <p className="mt-3 font-display text-2xl text-teal/90">English · Hindi · Kannada</p>
         </BentoCard>
       </div>
 
@@ -69,7 +69,7 @@ const About = () => {
             <p className="text-xl" aria-hidden="true">
               {fact.icon}
             </p>
-            <p className="mt-2 text-sm font-semibold text-white">{fact.title}</p>
+            <p className="mt-2 text-sm font-semibold text-teal">{fact.title}</p>
             <p className="mt-1 text-xs text-muted">{fact.subtitle}</p>
           </motion.article>
         ))}

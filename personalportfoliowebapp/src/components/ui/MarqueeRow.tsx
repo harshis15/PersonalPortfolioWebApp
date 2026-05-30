@@ -12,7 +12,7 @@ const MarqueeRow = ({ items, reverse = false }: MarqueeRowProps) => {
         {data.map((item, index) => (
           <span
             key={`${item}-${index}`}
-            className="rounded-full border border-white/15 bg-navy px-4 py-2 text-xs font-mono text-mint transition hover:shadow-glow"
+            className="rounded-full border border-white/15 bg-navy px-4 py-2 text-xs font-mono text-teal transition hover:shadow-glow"
           >
             {item}
           </span>

@@ -53,7 +53,7 @@ const Projects = () => {
                 aria-expanded={isOpen}
               >
                 <div className="flex items-start justify-between gap-3">
-                  <h3 className="font-display text-2xl text-white">{project.title}</h3>
+                  <h3 className="font-display text-2xl text-teal">{project.title}</h3>
                   {project.details && (
                     <span className="inline-flex items-center gap-1 rounded-full border border-mint/40 bg-mint/10 px-2.5 py-1 text-[11px] font-semibold text-mint">
                       Details
@@ -61,7 +61,7 @@ const Projects = () => {
                     </span>
                   )}
                 </div>
-                <p className="mt-3 max-w-2xl text-sm leading-relaxed text-slate-200/90">{project.description}</p>
+                <p className="mt-3 max-w-2xl text-sm leading-relaxed text-teal/85">{project.description}</p>
               </button>
 
               {project.highlight && (
@@ -85,7 +85,7 @@ const Projects = () => {
       <AnimatePresence>
         {selectedProject?.details && (
           <motion.div
-            className="fixed inset-0 z-[120] bg-navy-deep/65 backdrop-blur-md"
+            className="fixed inset-0 z-[120] bg-navy-deep/70 backdrop-blur-md"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -104,13 +104,13 @@ const Projects = () => {
             >
               <div className="flex items-start justify-between gap-4">
                 <div>
-                  <h3 className="font-display text-3xl text-white">{selectedProject.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-slate-200/90">{selectedProject.description}</p>
+                  <h3 className="font-display text-3xl text-teal">{selectedProject.title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-teal/85">{selectedProject.description}</p>
                 </div>
                 <button
                   type="button"
                   onClick={() => setOpenIndex(null)}
-                  className="rounded-lg border border-white/20 p-2 text-slate-200 transition hover:border-mint/60 hover:text-mint"
+                  className="rounded-lg border border-white/20 p-2 text-teal/80 transition hover:border-mint/60 hover:text-teal"
                   aria-label="Close project details"
                 >
                   <FiX />
@@ -126,10 +126,10 @@ const Projects = () => {
               <div className="mt-4 space-y-4">
                 {selectedProject.details.sections.map((section) => (
                   <div key={section.heading} className="rounded-lg border border-white/10 bg-white/[0.02] p-3.5">
-                    <h4 className="font-semibold text-white">{section.heading}</h4>
+                    <h4 className="font-semibold text-teal">{section.heading}</h4>
                     <ul className="mt-2 space-y-1.5">
                       {section.points.map((point) => (
-                        <li key={point} className="flex gap-2 text-sm text-slate-200">
+                        <li key={point} className="flex gap-2 text-sm text-teal/85">
                           <span className="mt-1 h-1.5 w-1.5 rounded-full bg-mint" />
                           <span>{point}</span>
                         </li>

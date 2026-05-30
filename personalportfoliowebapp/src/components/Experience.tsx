@@ -41,12 +41,12 @@ const Experience = () => {
                 aria-expanded={isOpen}
               >
                 <div className="flex flex-wrap items-center gap-2">
-                  <h3 className="font-display text-2xl text-white">{item.company}</h3>
+                  <h3 className="font-display text-2xl text-teal">{item.company}</h3>
                   <MintBadge label={item.role} />
                 </div>
                 <p className="mt-2 text-xs font-mono uppercase tracking-[0.16em] text-muted">{item.dateRange}</p>
-                <p className="mt-1 text-sm text-slate-200">{item.location}</p>
-                <p className="mt-3 text-sm text-slate-300">{item.summary}</p>
+                <p className="mt-1 text-sm text-teal/85">{item.location}</p>
+                <p className="mt-3 text-sm text-teal/75">{item.summary}</p>
               </button>
 
               <AnimatePresence initial={false}>
@@ -59,11 +59,11 @@ const Experience = () => {
                     className="overflow-hidden"
                   >
                     {item.projects?.map((project) => (
-                      <div key={project.title} className="mt-4 rounded-xl border border-white/10 bg-navy/70 p-4">
-                        <h4 className="font-semibold text-mint">{project.title}</h4>
+                      <div key={project.title} className="mt-4 rounded-xl border border-white/10 bg-navy/80 p-4">
+                        <h4 className="font-semibold text-teal">{project.title}</h4>
                         <ul className="mt-2 space-y-2">
                           {project.points.map((point) => (
-                            <li key={point} className="flex gap-2 text-sm text-slate-200">
+                            <li key={point} className="flex gap-2 text-sm text-teal/85">
                               <span className="mt-1 h-1.5 w-1.5 rounded-full bg-mint" />
                               <span>{point}</span>
                             </li>
@@ -75,7 +75,7 @@ const Experience = () => {
                     {item.bullets && (
                       <ul className="mt-4 space-y-2">
                         {item.bullets.map((bullet) => (
-                          <li key={bullet} className="flex gap-2 text-sm text-slate-200">
+                          <li key={bullet} className="flex gap-2 text-sm text-teal/85">
                             <span className="mt-1 h-1.5 w-1.5 rounded-full bg-mint" />
                             <span>{bullet}</span>
                           </li>

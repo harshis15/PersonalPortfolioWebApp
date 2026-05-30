@@ -35,7 +35,7 @@ const Skills = () => {
             <h3 className="border-l-2 border-teal pl-3 font-display text-xl text-teal">{category.title}</h3>
             <div className="mt-4 flex flex-wrap gap-2">
               {category.skills.map((skill) => (
-                <span key={skill} className="skill-tag rounded-full border border-teal/50 bg-navy px-3 py-1 text-xs font-mono text-mint">
+                <span key={skill} className="skill-tag rounded-full border border-teal/50 bg-navy px-3 py-1 text-xs font-mono text-teal">
                   {skill}
                 </span>
               ))}

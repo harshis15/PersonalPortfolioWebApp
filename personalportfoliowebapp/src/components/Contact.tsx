@@ -21,8 +21,8 @@ const Contact = () => {
         transition={{ duration: 0.55, ease: [0.16, 1, 0.3, 1] }}
         className="text-center"
       >
-        <h2 className="font-display text-4xl text-white md:text-5xl">{contact.title}</h2>
-        <p className="mx-auto mt-3 max-w-2xl text-slate-200/85">{contact.subtitle}</p>
+        <h2 className="font-display text-4xl text-teal md:text-5xl">{contact.title}</h2>
+        <p className="mx-auto mt-3 max-w-2xl text-teal/85">{contact.subtitle}</p>
       </motion.div>
 
       <div className="mt-8 grid gap-3 md:grid-cols-2 xl:grid-cols-4">
@@ -36,12 +36,12 @@ const Contact = () => {
               rel={method.icon === 'email' ? undefined : 'noreferrer'}
               className="group flex min-w-0 items-start gap-3 rounded-2xl border border-white/15 bg-white/[0.04] px-4 py-3 transition hover:border-mint/60 hover:shadow-glow"
             >
-              <span className="mt-0.5 rounded-full bg-navy p-2 text-mint">
+              <span className="mt-0.5 rounded-full bg-navy p-2 text-teal">
                 <Icon size={16} />
               </span>
               <span className="min-w-0 text-left">
                 <span className="block text-xs uppercase tracking-[0.16em] text-muted">{method.label}</span>
-                <span className="mt-0.5 block break-all text-sm leading-snug text-white">{method.value}</span>
+                <span className="mt-0.5 block break-all text-sm leading-snug text-teal">{method.value}</span>
               </span>
             </a>
           )

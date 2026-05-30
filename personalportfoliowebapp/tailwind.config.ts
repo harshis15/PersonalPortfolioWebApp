@@ -5,12 +5,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        navy: '#0D1B3E',
-        'navy-deep': '#08132A',
-        teal: '#028090',
-        mint: '#02C39A',
-        'teal-light': '#1C7293',
-        muted: '#7A8FA6',
+        navy: '#713600',
+        'navy-deep': '#38240D',
+        teal: '#FDFBD4',
+        mint: '#C05800',
+        'teal-light': '#9B4A04',
+        muted: '#DCCFB8',
+        cream: '#FDFBD4',
       },
       fontFamily: {
         display: ['Syne', 'sans-serif'],
@@ -19,7 +20,7 @@ const config: Config = {
       },
       boxShadow: {
         glass: '0 14px 35px rgba(0, 0, 0, 0.22)',
-        glow: '0 0 0 1px rgba(2, 128, 144, 0.45), 0 0 18px rgba(2, 195, 154, 0.25)',
+        glow: '0 0 0 1px rgba(253, 251, 212, 0.35), 0 0 18px rgba(192, 88, 0, 0.35)',
       },
       keyframes: {
         pulseDot: {

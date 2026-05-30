@@ -14,9 +14,9 @@ const baseClass =
 
 const content = (children: ReactNode, className?: string) => (
   <>
-    <span className="absolute inset-0 rounded-full bg-[conic-gradient(from_180deg_at_50%_50%,#028090,#02C39A,#1C7293,#028090)] glow-spin" />
+    <span className="absolute inset-0 rounded-full bg-[conic-gradient(from_180deg_at_50%_50%,#713600,#C05800,#FDFBD4,#713600)] glow-spin" />
     <span className="absolute inset-[1px] rounded-full bg-navy-deep" />
-    <span className={`relative z-10 text-white ${className ?? ''}`}>{children}</span>
+    <span className={`relative z-10 text-teal ${className ?? ''}`}>{children}</span>
   </>
 )
 

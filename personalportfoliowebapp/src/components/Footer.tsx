@@ -19,7 +19,7 @@ const Footer = () => {
                 target={link.type === 'email' ? undefined : '_blank'}
                 rel={link.type === 'email' ? undefined : 'noreferrer'}
                 aria-label={link.label}
-                className="rounded-full border border-white/15 p-2 text-slate-300 transition hover:border-mint/60 hover:text-mint"
+                className="rounded-full border border-white/15 p-2 text-muted transition hover:border-mint/60 hover:text-teal"
               >
                 <Icon size={14} />
               </a>

@@ -52,19 +52,19 @@ function App() {
   }, [sectionIds])
 
   return (
-    <div className="relative min-h-screen bg-navy-deep text-white font-body">
+    <div className="relative min-h-screen bg-navy-deep text-teal font-body">
       <motion.div
-        className="fixed left-0 top-0 z-[80] h-px w-full origin-left bg-gradient-to-r from-mint to-teal"
+        className="fixed left-0 top-0 z-[80] h-px w-full origin-left bg-gradient-to-r from-[#713600] via-[#C05800] to-[#FDFBD4]"
         style={{ scaleX: smoothProgress }}
       />
       {isDesktop && (
         <>
           <motion.div
-            className="pointer-events-none fixed z-[60] hidden h-[300px] w-[300px] rounded-full bg-[radial-gradient(circle,rgba(2,195,154,0.12)_0%,rgba(2,195,154,0.02)_42%,transparent_72%)] md:block"
+            className="pointer-events-none fixed z-[60] hidden h-[300px] w-[300px] rounded-full bg-[radial-gradient(circle,rgba(113,54,0,0.26)_0%,rgba(113,54,0,0.08)_42%,transparent_72%)] md:block"
             style={{ x: x - 150, y: y - 150 }}
           />
           <motion.div
-            className="pointer-events-none fixed z-[70] hidden h-2.5 w-2.5 rounded-full border border-mint/85 bg-teal shadow-[0_0_12px_rgba(2,195,154,0.7)] md:block"
+            className="pointer-events-none fixed z-[70] hidden h-2.5 w-2.5 rounded-full border border-[#FDFBD4]/75 bg-[#C05800] shadow-[0_0_12px_rgba(192,88,0,0.65)] md:block"
             style={{ x: x - 5, y: y - 5 }}
           />
         </>

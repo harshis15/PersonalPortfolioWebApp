@@ -63,7 +63,7 @@ const Hero = () => {
         if (particle.y <= 0 || particle.y >= 1) particle.vy *= -1
 
         ctx.beginPath()
-        ctx.fillStyle = `rgba(2, 195, 154, ${particle.alpha})`
+        ctx.fillStyle = `rgba(253, 251, 212, ${particle.alpha})`
         ctx.arc(particle.x * canvas.width, particle.y * canvas.height, particle.size, 0, Math.PI * 2)
         ctx.fill()
       })
@@ -98,13 +98,13 @@ const Hero = () => {
           className="space-y-6"
         >
           <motion.div variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } }}>
-            <span className="inline-flex items-center gap-2 rounded-full border border-teal/50 bg-white/[0.03] px-4 py-1.5 text-xs font-mono uppercase tracking-[0.14em] text-mint">
+            <span className="inline-flex items-center gap-2 rounded-full border border-teal/50 bg-white/[0.03] px-4 py-1.5 text-xs font-mono uppercase tracking-[0.14em] text-teal">
               <span className="h-2 w-2 animate-pulse rounded-full bg-mint" />
               {hero.availability}
             </span>
           </motion.div>
 
-          <motion.p variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } }} className="text-sm uppercase tracking-[0.2em] text-teal/90">
+          <motion.p variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } }} className="text-sm uppercase tracking-[0.2em] text-muted">
             {brand.roleLine}
           </motion.p>
 
@@ -130,7 +130,7 @@ const Hero = () => {
             </AnimatePresence>
           </motion.div>
 
-          <motion.p variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } }} className="max-w-2xl text-base leading-relaxed text-slate-200/90 md:text-lg">
+          <motion.p variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } }} className="max-w-2xl text-base leading-relaxed text-teal/90 md:text-lg">
             {hero.subheading} {hero.bio}
           </motion.p>
 
@@ -161,7 +161,7 @@ const Hero = () => {
                   target={link.type === 'email' ? undefined : '_blank'}
                   rel={link.type === 'email' ? undefined : 'noreferrer'}
                   aria-label={link.label}
-                  className="rounded-full border border-white/15 bg-white/[0.03] p-2.5 text-slate-300 transition hover:scale-110 hover:border-mint/60 hover:text-mint"
+                  className="rounded-full border border-white/15 bg-white/[0.03] p-2.5 text-muted transition hover:scale-110 hover:border-mint/60 hover:text-teal"
                 >
                   <Icon size={18} />
                 </a>
@@ -176,10 +176,10 @@ const Hero = () => {
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
           className="relative mx-auto flex w-full max-w-sm justify-center"
         >
-          <div className="relative grid h-72 w-72 place-content-center rounded-full border border-teal/40 bg-white/[0.04] shadow-[0_0_60px_rgba(2,195,154,0.2)] md:h-80 md:w-80">
-            <div className="absolute inset-5 rounded-full border border-mint/40" />
-            <div className="orbit-ring absolute inset-[-14px] rounded-full border border-teal/45" />
-            <div className="animate-float rounded-full border border-white/20 bg-navy px-8 py-8 text-center shadow-glass">
+          <div className="relative grid h-72 w-72 place-content-center rounded-full border border-[#C05800]/40 bg-[#713600]/20 shadow-[0_0_60px_rgba(113,54,0,0.3)] md:h-80 md:w-80">
+            <div className="absolute inset-5 rounded-full border border-[#C05800]/40" />
+            <div className="orbit-ring absolute inset-[-14px] rounded-full border border-[#713600]/60" />
+            <div className="animate-float rounded-full border border-[#FDFBD4]/20 bg-navy px-8 py-8 text-center shadow-glass">
               <p className="font-display text-6xl font-bold text-mint">{brand.initials}</p>
             </div>
           </div>
@@ -190,7 +190,7 @@ const Hero = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.1 }}
-        className="absolute bottom-6 left-1/2 flex -translate-x-1/2 flex-col items-center gap-1 text-xs uppercase tracking-[0.26em] text-slate-400"
+        className="absolute bottom-6 left-1/2 flex -translate-x-1/2 flex-col items-center gap-1 text-xs uppercase tracking-[0.26em] text-muted"
       >
         <span>{hero.scrollHint}</span>
         <BsChevronDown className="animate-bounce text-mint" />
