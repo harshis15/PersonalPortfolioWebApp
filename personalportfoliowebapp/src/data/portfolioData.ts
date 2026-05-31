@@ -1,3 +1,7 @@
+import hackathonYouScreens from '../assets/hacakthon YOU screens.jpg'
+import harshithaWarsawAward from '../assets/Harshitha Srikanth.png'
+import finalQualifiersMadrid from '../assets/final qualifiers.png'
+
 export type NavItem = {
   id: string
   label: string
@@ -6,7 +10,7 @@ export type NavItem = {
 export type SocialLink = {
   label: string
   href: string
-  type: 'linkedin' | 'github' | 'email'
+  type: 'linkedin' | 'github' | 'email' | 'medium'
 }
 
 export type QuickFact = {
@@ -58,6 +62,7 @@ export type AchievementItem = {
   event: string
   description: string
   featured?: boolean
+  image?: string
 }
 
 export type EducationItem = {
@@ -72,6 +77,15 @@ export type ContactMethod = {
   label: string
   value: string
   href: string
+}
+
+export type BlogPreview = {
+  title: string
+  subtitle: string
+  postTitle: string
+  postDescription: string
+  postLink: string
+  postPlatform: string
 }
 
 export const portfolioData = {
@@ -104,6 +118,11 @@ export const portfolioData = {
         type: 'linkedin',
       },
       { label: 'GitHub', href: 'https://github.com/harshis15', type: 'github' },
+      {
+        label: 'Blog',
+        href: 'https://harshithas2000.medium.com/revolutionizing-authentication-implementing-passkeys-for-a-passwordless-future-489f2f4db299',
+        type: 'medium',
+      },
       { label: 'Email', href: 'mailto:harshithas2000@gmail.com', type: 'email' },
     ] as SocialLink[],
   },
@@ -251,14 +270,37 @@ export const portfolioData = {
       {
         company: 'YML (Code and Theory)',
         role: 'Associate Software Engineer',
-        dateRange: 'Aug 2022 - Dec 2023',
+        dateRange: 'Aug 2022 – Present',
         location: 'Bengaluru, India',
-        summary: 'Contributed to iOS and full-stack product development across banking and internal initiatives.',
-        bullets: [
-          'Delivered iOS application features for the Credit One Bank project, including UI implementation, debugging, and code quality improvements through reviews',
-          'Worked on a 2-month iOS Passkeys proof of concept by researching secure authentication approaches and prototyping passkey flows',
-          'Built Beta-Mart as an internal MERN training project with React frontend, Node.js + Express APIs, and MongoDB-backed data integration',
-          'Collaborated with cross-functional teams to ship features on time and maintain reliable app performance',
+        summary:
+          'Worked across iOS and MERN development, contributing to production mobile features, security-focused passkey initiatives, and full-stack web delivery.',
+        projects: [
+          {
+            title: 'iOS Development - Credit One Bank Project (8 months)',
+            points: [
+              'Collaborated with the team to design and develop user-friendly interfaces and features for the iOS application.',
+              'Implemented and enhanced app functionality with clean, efficient code aligned to coding standards and best practices.',
+              'Troubleshot and debugged issues to improve application stability and performance.',
+              'Implemented passkeys functionality as part of core security measures to protect user data confidentiality.',
+              'Participated in regular code reviews to maintain code quality and consistency across the team.',
+            ],
+          },
+          {
+            title: 'Proof of Concept (POCs) - iOS Passkeys (2 months)',
+            points: [
+              'Conducted research and analysis to evaluate innovative approaches to passkey implementation.',
+              'Prototyped and tested passkey-related features to strengthen authentication and app security.',
+            ],
+          },
+          {
+            title: 'Frontend and Backend Development - MERN Stack (2 months)',
+            points: [
+              'Developed responsive and interactive user interfaces using React.js.',
+              'Designed and implemented APIs using Node.js and Express.js to support frontend workflows.',
+              'Used MongoDB for efficient data storage and seamless frontend-backend integration.',
+              'Collaborated with cross-functional teams to deliver a fully functional web application within project timelines.',
+            ],
+          },
         ],
       },
     ] as ExperienceItem[],
@@ -551,6 +593,7 @@ export const portfolioData = {
         event: 'AGENTVERSE Hackathon 2025 by Fetch.ai',
         description: 'Built a multi-agent autonomous RFQ Analyzer using 5 specialized AI agents.',
         featured: true,
+        image: hackathonYouScreens,
       },
       {
         icon: '🥉',
@@ -563,12 +606,14 @@ export const portfolioData = {
         title: '1st Place - Global Hackathon 3.0, EMEA Regional Round (Warsaw, Poland)',
         event: 'Emerson Global Hackathon',
         description: 'Built an AI-driven proposal automation solution.',
+        image: harshithaWarsawAward,
       },
       {
         icon: '🌟',
         title: 'Best Practical Project Award - Global Finals (Madrid, Spain)',
         event: 'Emerson Global Hackathon',
         description: 'Represented the MEA region before Emerson global leadership.',
+        image: finalQualifiersMadrid,
       },
     ] as AchievementItem[],
   },
@@ -596,6 +641,16 @@ export const portfolioData = {
       'iOS and Swift — Complete iOS App Development Bootcamp (Udemy)',
     ],
   },
+  blog: {
+    title: 'Featured Writing',
+    subtitle: 'I also share practical learnings from real-world engineering work.',
+    postTitle: 'Revolutionizing Authentication: Implementing Passkeys for a Passwordless Future',
+    postDescription:
+      'A practical article on passkey implementation patterns, why passwordless authentication matters, and how modern security UX can be improved in real products.',
+    postLink:
+      'https://harshithas2000.medium.com/revolutionizing-authentication-implementing-passkeys-for-a-passwordless-future-489f2f4db299',
+    postPlatform: 'Medium',
+  } as BlogPreview,
   contact: {
     title: "Let's Build Something",
     subtitle: 'Open to AI engineering roles, collaborations, and interesting problems.',
@@ -624,6 +679,12 @@ export const portfolioData = {
         value: 'github.com/harshis15',
         href: 'https://github.com/harshis15',
       },
+      {
+        icon: 'medium',
+        label: 'Blog',
+        value: 'Passkeys for a Passwordless Future',
+        href: 'https://harshithas2000.medium.com/revolutionizing-authentication-implementing-passkeys-for-a-passwordless-future-489f2f4db299',
+      },
     ] as ContactMethod[],
     form: {
       nameLabel: 'Name',
@@ -633,8 +694,8 @@ export const portfolioData = {
       sendingLabel: 'Sending...',
       success: 'Message sent successfully!',
       fallbackSuccess: 'Your mail client has been opened.',
-      error: 'Could not send message. Please try again.',
-    },
+      error: 'Could not send message. Please try again.'
+    }
   },
   footer: {
     left: 'Harshitha Srikanth © 2026',

@@ -2,6 +2,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { BsChevronDown } from 'react-icons/bs'
 import { FiGithub, FiLinkedin, FiMail } from 'react-icons/fi'
+import { SiMedium } from 'react-icons/si'
 import { portfolioData } from '../data/portfolioData'
 import GlowButton from './ui/GlowButton'
 
@@ -9,6 +10,7 @@ const iconMap = {
   linkedin: FiLinkedin,
   github: FiGithub,
   email: FiMail,
+  medium: SiMedium,
 } as const
 
 const Hero = () => {

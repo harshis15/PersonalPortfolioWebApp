@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { FiGithub, FiLinkedin, FiMail, FiMapPin } from 'react-icons/fi'
+import { SiMedium } from 'react-icons/si'
 import { portfolioData } from '../data/portfolioData'
 
 const iconMap = {
@@ -7,6 +8,7 @@ const iconMap = {
   location: FiMapPin,
   linkedin: FiLinkedin,
   github: FiGithub,
+  medium: SiMedium,
 } as const
 
 const Contact = () => {

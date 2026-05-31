@@ -1,4 +1,5 @@
 import { FiGithub, FiLinkedin, FiMail } from 'react-icons/fi'
+import { SiMedium } from 'react-icons/si'
 import { portfolioData } from '../data/portfolioData'
 
 const Footer = () => {
@@ -11,7 +12,8 @@ const Footer = () => {
         <p className="font-mono text-xs uppercase tracking-[0.15em]">{footer.center}</p>
         <div className="flex items-center gap-3">
           {hero.socialLinks.map((link) => {
-            const Icon = link.type === 'linkedin' ? FiLinkedin : link.type === 'github' ? FiGithub : FiMail
+            const Icon =
+              link.type === 'linkedin' ? FiLinkedin : link.type === 'github' ? FiGithub : link.type === 'medium' ? SiMedium : FiMail
             return (
               <a
                 key={link.label}
