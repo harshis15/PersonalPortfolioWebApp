@@ -38,7 +38,7 @@ const Projects = () => {
               viewport={{ once: true }}
               transition={{ delay: index * 0.06 }}
               whileHover={{ scale: 1.02 }}
-              className={`group relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03] p-6 shadow-glass transition hover:shadow-glow ${
+              className={`group relative overflow-hidden rounded-2xl border border-border bg-surface p-6 shadow-glass transition hover:border-mint hover:shadow-glow ${
                 index === 0 ? 'lg:col-span-2' : ''
               }`}
             >

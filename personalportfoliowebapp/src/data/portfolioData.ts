@@ -351,13 +351,12 @@ export const portfolioData = {
           executiveSummary:
             'Built a connected proposal ecosystem that unifies chatbot guidance, workflow automation, and business-facing interfaces.',
           sections: [
-            {
-              heading: 'Scope',
-              points: [
-                'Developed a proposal automation platform combining Copilot Studio, Power Automate, SharePoint, and Power Apps.',
-                'Connected people, documents, and workflow steps into one streamlined process.',
-              ],
-            },
+              {
+                  heading: 'Scope',
+                  points: [
+                      'Developed a proposal automation platform combining Copilot Studio, Power Automate, SharePoint, and Power Apps.',
+                      'Connected people, documents, and workflow steps into one streamlined process.']
+             },
             {
               heading: 'Key Capabilities',
               points: [
@@ -592,8 +591,8 @@ export const portfolioData = {
         title: '1st Place - Enterprise Solutions Track',
         event: 'AGENTVERSE Hackathon 2025 by Fetch.ai',
         description: 'Built a multi-agent autonomous RFQ Analyzer using 5 specialized AI agents.',
-        featured: true,
-        image: hackathonYouScreens,
+            featured: true,
+            image: hackathonYouScreens,
       },
       {
         icon: '🥉',
@@ -678,12 +677,6 @@ export const portfolioData = {
         label: 'GitHub',
         value: 'github.com/harshis15',
         href: 'https://github.com/harshis15',
-      },
-      {
-        icon: 'medium',
-        label: 'Blog',
-        value: 'Passkeys for a Passwordless Future',
-        href: 'https://harshithas2000.medium.com/revolutionizing-authentication-implementing-passkeys-for-a-passwordless-future-489f2f4db299',
       },
     ] as ContactMethod[],
     form: {

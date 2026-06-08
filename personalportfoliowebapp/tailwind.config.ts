@@ -5,22 +5,29 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        navy: '#713600',
-        'navy-deep': '#38240D',
+        'page-bg': '#110700',
+        navy: '#1C0E03',
+        'navy-deep': '#110700',
+        surface: '#241206',
+        raised: '#2E1608',
+        border: '#3A2010',
         teal: '#FDFBD4',
         mint: '#C05800',
-        'teal-light': '#9B4A04',
-        muted: '#DCCFB8',
-        cream: '#FDFBD4',
+        'teal-light': '#E8873A',
+        muted: '#D4B090',
+        cream: '#B08060',
+        'label-muted': '#8A6040',
+        'accent-muted': '#8C3E00',
+        'accent-border': '#5C2E0A',
       },
       fontFamily: {
-        display: ['Syne', 'sans-serif'],
-        body: ['DM Sans', 'sans-serif'],
+        display: ['Inter', 'sans-serif'],
+        body: ['Inter', 'sans-serif'],
         mono: ['JetBrains Mono', 'monospace'],
       },
       boxShadow: {
         glass: '0 14px 35px rgba(0, 0, 0, 0.22)',
-        glow: '0 0 0 1px rgba(253, 251, 212, 0.35), 0 0 18px rgba(192, 88, 0, 0.35)',
+        glow: '0 0 0 1px #5C2E0A, 0 0 18px rgba(192, 88, 0, 0.35)',
       },
       keyframes: {
         pulseDot: {

@@ -46,7 +46,7 @@ const Navbar = ({ activeSection, navLinks }: NavbarProps) => {
         <button
           type="button"
           onClick={() => scrollToSection('hero')}
-          className="rounded-full border border-white/10 bg-navy/70 px-3 py-1 font-display text-base font-bold tracking-[0.2em] text-teal backdrop-blur-xl transition hover:border-mint/60"
+          className="rounded-full border border-accent-border bg-raised px-3 py-1 font-display text-base font-bold tracking-[0.2em] text-mint backdrop-blur-xl transition hover:border-mint/60"
           aria-label="Go to hero section"
         >
           HS
@@ -58,7 +58,7 @@ const Navbar = ({ activeSection, navLinks }: NavbarProps) => {
           className="pointer-events-none absolute left-1/2 hidden -translate-x-1/2 md:block"
           aria-label="Primary navigation"
         >
-          <div className="pointer-events-auto flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-3 py-2 backdrop-blur-xl">
+          <div className="pointer-events-auto flex items-center gap-2 rounded-full border border-border bg-surface px-3 py-2 backdrop-blur-xl">
             {navLinks.map((link) => {
               const isActive = activeSection === link.id
               return (
@@ -66,10 +66,10 @@ const Navbar = ({ activeSection, navLinks }: NavbarProps) => {
                   key={link.id}
                   type="button"
                   onClick={() => scrollToSection(link.id)}
-                  className="nav-link relative px-3 py-1.5 text-sm text-teal/90"
+                  className="nav-link relative px-3 py-1.5 text-sm text-muted"
                   aria-current={isActive ? 'page' : undefined}
                 >
-                  {isActive && <span className="absolute -top-1.5 left-1/2 h-1 w-1 -translate-x-1/2 rounded-full bg-mint" />}
+                  {isActive && <span className="absolute -bottom-0.5 left-3 right-3 h-0.5 rounded-full bg-mint" />}
                   {link.label}
                 </button>
               )
@@ -79,7 +79,7 @@ const Navbar = ({ activeSection, navLinks }: NavbarProps) => {
 
         <button
           type="button"
-          className="rounded-lg border border-white/10 bg-navy/60 p-2 text-teal md:hidden"
+          className="rounded-lg border border-accent-border bg-raised p-2 text-mint md:hidden"
           onClick={() => setIsOpen(true)}
           aria-label="Open menu"
         >

@@ -57,7 +57,7 @@ function App() {
   }, [sectionIds])
 
   return (
-    <div className="relative min-h-screen bg-navy-deep text-teal font-body">
+    <div className="relative min-h-screen bg-page-bg text-cream font-body">
       <motion.div
         className="fixed left-0 top-0 z-[80] h-px w-full origin-left bg-gradient-to-r from-[#713600] via-[#C05800] to-[#FDFBD4]"
         style={{ scaleX: smoothProgress }}
