@@ -129,7 +129,7 @@ export const portfolioData = {
   about: {
     title: 'About',
     statement:
-      "I'm a Dubai-based AI Engineer who thrives at the intersection of machine learning, generative AI, and real-world enterprise automation. From building multi-agent RFQ systems to deploying Power Platform ecosystems used by 300+ people, I care deeply about impact - not just output.",
+      "I'm a Dubai-based AI Engineer who thrives at the intersection of machine learning, generative AI, and real-world enterprise automation. From building multi-agent RFQ systems to deploying Power Platform ecosystems used by 300+ people, I care deeply about impact and not just output.",
     quickFacts: [
       {
         icon: '🎓',
@@ -252,6 +252,15 @@ export const portfolioData = {
             title: 'MRO Configurator',
             points: ['Built unified part search, Trex model customization, and quote generation workflows'],
           },
+          {
+            title: 'Power BI Procurement Invoice Analytics Dashboard',
+            points: [
+              'Developed an interactive Power BI dashboard for procurement invoice lifecycle tracking and financial insights.',
+              'Enabled daily refresh for near real-time business insights.',
+              'Improved visibility into procurement operations and helped identify payment delays and bottlenecks.',
+              'Enabled faster financial decision-making using automated insights.',
+            ],
+          },
         ],
       },
       {
@@ -270,7 +279,7 @@ export const portfolioData = {
       {
         company: 'YML (Code and Theory)',
         role: 'Associate Software Engineer',
-        dateRange: 'Aug 2022 – Present',
+        dateRange: 'Aug 2022 - Present',
         location: 'Bengaluru, India',
         summary:
           'Worked across iOS and MERN development, contributing to production mobile features, security-focused passkey initiatives, and full-stack web delivery.',
@@ -554,7 +563,41 @@ export const portfolioData = {
             },
           ],
         },
-      },
+        },
+        {
+            title: 'Power BI Procurement Invoice Analytics Dashboard',
+            description: 'Interactive real-time Power BI dashboard for procurement invoice lifecycle tracking and financial insights.',
+            tags: ['Power BI', 'Procurement', 'Data Analytics', 'SQL', 'Dashboarding'],
+            details: {
+                executiveSummary:
+                    'Built a real-time procurement analytics dashboard to monitor invoice lifecycle, aging, and payment performance across the organization.',
+                sections: [
+                    {
+                        heading: 'Overview',
+                        points: [
+                            'Developed an interactive Power BI dashboard using procurement invoice data.',
+                            'Enabled daily refresh for near real-time business insights.',
+                        ],
+                    },
+                    {
+                        heading: 'Dashboard Views',
+                        points: [
+                            'Summary overview with KPIs such as total, paid, pending, and set-aside invoices.',
+                            'Invoice aging analysis with overdue tracking and time-based trends.',
+                            'Payment performance view showing on-time vs delayed payments and supplier analysis.',
+                        ],
+                    },
+                    {
+                        heading: 'Impact',
+                        points: [
+                            'Improved visibility into procurement operations.',
+                            'Helped identify payment delays and bottlenecks.',
+                            'Enabled faster financial decision-making using automated insights.',
+                        ],
+                    },
+                ],
+            },
+        },
       {
         title: 'Credit One Bank iOS Development',
         description: 'Implemented and enhanced iOS app features with clean coding practices, debugging, and code reviews, including passkeys-related security functionality for safer user access.',
